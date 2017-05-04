@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>585</width>
+    <height>476</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <widget class="QPushButton" name="ProactiveConnect">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>108</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>建立主动连接</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="CloseProactiveConnect">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>108</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>关闭主动连接</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="WriteDatas">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>310</y>
+         <width>108</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>发送数据</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <widget class="QPushButton" name="ReactiveConnect">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>108</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>建立被动连接</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="CloseReactiveConnect">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>108</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>关闭被动连接</string>
+       </property>
+      </widget>
+      <zorder>ReactiveConnect</zorder>
+      <zorder>widget</zorder>
+      <zorder>CloseReactiveConnect</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>585</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
